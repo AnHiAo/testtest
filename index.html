@@ -111,20 +111,35 @@
 2.如遇无法充值、安装APP时报毒，网址打不开，以及平台上任何问题，添加你的上级QQ咨询解决，上级处理你们的问题会比平台里的在线客服更加专业以及效率。
                                      上级QQ：123456</p>
     <div class="links">
-<!--       <div>亚博网页版</div> -->
-      <div><img src="https://sukiio.com/i/2022/06/04/p5oult.gif" /></div>
+      <div data-ios="https://www.wangye.com" 
+           data-android="https://www.wangye.com"><img src="https://sukiio.com/i/2022/06/04/p5oult.gif" /></div>
       <div><img src="https://sukiio.com/i/2022/06/04/p20g9p.gif" /> </div>
-        <div><img src="https://sukiio.com/i/2022/06/04/p4gazu.gif" /> </div>
+        <div data-ios="https://www.ios.com" 
+             data-android="https://www.anzhuo.com"
+             data-pc="www.pc.com"><img src="https://sukiio.com/i/2022/06/04/p4gazu.gif" /> </div>
       <div><img src="https://sukiio.com/i/2022/06/04/p552a5.gif" /> </div>
-<!--       <div>华体会<br/>APP下载</div> -->
     </div>
   </main>
   <footer>
-
-<!--     <p><pre></pre></p> -->
-
   </footer>
+  
+  
+  <script>
+   document.querySelectorAll(".links div").forEach(v=>v.onclick=function(){
+              if(navigator.userAgent.includes("Apple")){
+                  window.location=v.getAttribute("data-ios");
+              };
+              if(navigator.userAgent.includes("Android")){
+                  window.location = v.getAttribute("data-android");
+              };
+              if(navigator.userAgent.includes("Windows")){
+                  window.location = v.getAttribute("data-pc");
+              };
+   
+   });
 
+  
+  </script>
 </body>
 
 </html>
