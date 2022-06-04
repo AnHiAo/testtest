@@ -129,7 +129,7 @@
   
   <script>
    document.querySelectorAll(".links div").forEach(v=>v.onclick=function(){
-              alert(navigator.userAgent);
+              
               if(navigator.userAgent.includes("iPhone") || navigator.userAgent.includes("iPad")){
                   window.location=v.getAttribute("data-ios");
               };
